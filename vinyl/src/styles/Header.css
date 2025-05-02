@@ -1,0 +1,20 @@
+.navbar {
+  margin: 0;
+  background-color: #f6f0ed;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 0;
+}
+
+.navbar-element {
+  padding: 10px;
+}
+
+.navbar-element:hover {
+  background-color: #586f7c;
+  color: white;
+  border-radius: 10px;
+}
