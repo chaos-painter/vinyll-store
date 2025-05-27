@@ -1,0 +1,47 @@
+.record {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .record {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+.record:hover {
+  transform: translateY(-10px);
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vinyl {
+  transition: transform 0.3s ease;
+}
+
+.vinyl:hover {
+  transform: translateX(30%);
+}
+
+.cover {
+  pointer-events: none;
+}
+
+.record-clicked {
+  /* transform: scale(5); */
+}
+
+
+
+
+
+

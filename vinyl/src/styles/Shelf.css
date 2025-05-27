@@ -1,37 +1,38 @@
 .shelf {
   position: relative;
-  width: 50%;
-  height: 120px;
-  border-radius: 10px 10px 0 0;
-  background-color: #586F7C;
   margin: auto;
+  width: 800px;
+  height: 20vh;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.shelf-front {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background-color: #6F8998;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 0 -5px 10px 0 rgba(0, 0, 20, 30%);
+.shelf-body {
+  height: 15px;
+  background-color: #586F7C;
+  border-radius: 5px 5px 15px 15px;
+  background: linear-gradient(0deg, rgb(64, 86, 92) 0%, hsla(202, 17%, 42%, 1) 100%);
+  box-shadow: 0 5px 3px 0 rgba(0, 0, 20, 40%);
 }
 
-.shelf-wall-left {
-  position: absolute;
-  left: 0;
-  width: 10px;
-  height: 100%;
-  border-radius: 10px 0 0 0;
-  background-color: #6F8998;
+.records {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 60px;
+  z-index: -1;
 }
 
-.shelf-wall-right {
-  position: absolute;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  border-radius: 0 10px 0 0;
-  background-color: #6F8998;
+@media (max-width: 768px) {
+  .shelf-body {
+    /* flex-direction: column; */
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .shelf {
+    width: 100%;
+  }
+
 }
