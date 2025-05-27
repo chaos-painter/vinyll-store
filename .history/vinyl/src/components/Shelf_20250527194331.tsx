@@ -1,6 +1,6 @@
 import "../styles/Shelf.css";
 import Vinyl from "./Vinyl.tsx";
-import vinyls from "../assets/covers/vinyls.json";
+import vinyls from "../src/data/vinyls.json";
 
 function Shelf() {
   const shelves = [];
