@@ -4,13 +4,17 @@ import "../styles/index.css";
 import Header from "../components/Header.tsx";
 import Shelf from "../components/Shelf.tsx";
 import AutoScrollHandler from "../components/AutoScrollHander.tsx";
-import BeautyBox from "../components/BeautyBox.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Header />
     <AutoScrollHandler />
-    <BeautyBox />
+    <div
+      style={{
+        width: "100%",
+        height: "75vh",
+      }}
+    ></div>
     <Shelf />
   </StrictMode>
 );

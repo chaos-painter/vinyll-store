@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Romvel';
-    src: url('RomvelCyr.woff2') format('woff2'),
-        url('RomvelCyr.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-

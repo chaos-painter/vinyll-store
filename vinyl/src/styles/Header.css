@@ -1,4 +1,4 @@
-nav {
+.navbar {
   margin: 0;
   background-color: #f6f0ed;
   list-style-type: none;
@@ -7,7 +7,6 @@ nav {
   justify-content: center;
   gap: 20px;
   padding: 5px 0;
-  font-family: 'Romvel';
 }
 
 .navbar-element {
