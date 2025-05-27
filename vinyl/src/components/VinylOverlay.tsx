@@ -1,8 +1,9 @@
 import "../styles/Vinyl.css";
+import { useState } from "react";
 import VinylProps from "../utils/props.ts";
 
 function Vinyl({ img, title }: VinylProps) {
-  const img_src = `../../src/assets/covers/${img}`;
+  const img_src = `../../public/vinyls/${img}`;
 
   return (
     <>
