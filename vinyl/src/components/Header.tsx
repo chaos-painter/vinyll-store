@@ -13,9 +13,9 @@ function Header() {
             <li className="navbar-element">Wario</li>
           </ul> */}
           <img
-            src="/SVG/Asset 2.svg"
+            src="/SVG/Asset 3.svg"
             alt="logo"
-            style={{ width: "80px", height: "auto" }}
+            style={{ width: "100px", height: "auto" }}
           ></img>
         </nav>
       </header>

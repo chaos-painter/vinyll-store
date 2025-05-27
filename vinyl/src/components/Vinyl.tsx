@@ -3,7 +3,7 @@ import { useState } from "react";
 import VinylProps from "../utils/props.ts";
 
 function Vinyl({ img }: VinylProps) {
-  const img_src = `../assets/covers/${img}`;
+  const img_src = `./src/assets/covers/${img}`;
 
   const [clicked, setClicked] = useState(false);
 
@@ -13,7 +13,7 @@ function Vinyl({ img }: VinylProps) {
         onClick={() => setClicked(!clicked)}
         className={clicked ? "record record-clicked" : "record"}
       >
-        <img src="vinyls/vinyl.webp" alt="vinyl" className="vinyl" />
+        <img src="./src/assets/vinyl.webp" alt="vinyl" className="vinyl" />
         <img src={img_src} alt="cover" className="cover" />
       </div>
     </>
