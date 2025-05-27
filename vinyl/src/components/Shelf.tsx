@@ -1,6 +1,6 @@
 import "../styles/Shelf.css";
 import Vinyl from "./Vinyl.tsx";
-import vinyls from "../../public/vinyls/vinyls.json";
+import vinyls from "../data/vinyls.json";
 import { useState, useEffect } from "react";
 
 function Shelf() {

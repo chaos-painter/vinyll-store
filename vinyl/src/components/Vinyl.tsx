@@ -3,7 +3,7 @@ import { useState } from "react";
 import VinylProps from "../utils/props.ts";
 
 function Vinyl({ img }: VinylProps) {
-  const img_src = `vinyls/${img}`;
+  const img_src = `../assets/covers/${img}`;
 
   const [clicked, setClicked] = useState(false);
 
