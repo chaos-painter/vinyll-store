@@ -18,6 +18,8 @@ interface ShelfProps {
 
 interface CartProps {
   items: CartItem[];
+  minimized: boolean;
+  minimize: () => void;
   clearCart: () => void;
 }
 

@@ -5,6 +5,7 @@ function CartItem({ item }: CartItemProps) {
     <>
       <div className="cart-item">
         <span>{item.name}</span>
+        <span>{item.amount}</span>
         <span>${item.price}</span>
       </div>
     </>

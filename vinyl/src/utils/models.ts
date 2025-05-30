@@ -1,5 +1,8 @@
+// Object models
+
 interface CartItem {
   name: string;
+  amount: number;
   price: number;
 }
 

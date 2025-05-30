@@ -9,13 +9,55 @@
   position: fixed;
   width: 300px;
   height: 300px;
+  overflow-y: auto;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 20px;
+  border: 1px solid #aa1c1d;
   right: 30px;
   bottom: 30px;
+  padding: 20px;
+  /* font-family: "Shlapak Script"; */
+  font-size: 12pt;
 }
 
 .cart-item-list {
-  padding: 10px 20px;
+  padding: 0;
 }
 
+.cart-bottom-row {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  height: 30px;
+}
+
+
+.cart-container.minimized {
+  height: auto;
+  width: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.minimize-btn {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  z-index: 1000;
+  background-color: #aa1c1d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.clear-cart-btn {
+  background-color: #aa1c1d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}

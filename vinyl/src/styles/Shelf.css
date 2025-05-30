@@ -10,10 +10,11 @@
 .shelf-body {
   height: 15px;
   background-color: #586F7C;
-  border-radius: 5px 5px 15px 15px;
   background: linear-gradient(0deg, #424242 0%,  #5c5c5c 100%);
   box-shadow: 0 5px 3px 0 rgba(0, 0, 20, 40%);
+  clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
 }
+
 
 .records {
   display: flex;

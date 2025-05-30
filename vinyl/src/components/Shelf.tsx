@@ -12,7 +12,9 @@ function Shelf({ addItem, shelves }: ShelfProps) {
               <Vinyl
                 key={i}
                 img={vinyl.image}
-                onClick={() => addItem({ name: vinyl.name, price: 99 })}
+                onClick={() =>
+                  addItem({ name: vinyl.name, amount: 1, price: 99 })
+                }
               />
             ))}
           </div>

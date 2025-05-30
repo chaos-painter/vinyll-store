@@ -6,3 +6,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Shlapak Script';
+  src: url('/fonts/Shlapak Script.woff2') format('woff2'),
+       url('/fonts/Shlapak Script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

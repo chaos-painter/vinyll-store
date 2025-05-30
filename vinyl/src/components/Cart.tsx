@@ -1,19 +1,46 @@
 import CartItem from "./CartItem.tsx";
 import "../styles/Cart.css";
 import { CartProps } from "../utils/props.ts";
+import { useState } from "react";
 
 function Cart({ items, clearCart }: CartProps) {
+  const [minimized, setMinimized] = useState(true);
+
+  const toggleMinimized = () => {
+    setMinimized(!minimized);
+  };
+
+  const isEmpty = items.length === 0;
+
   return (
     <>
-      <div className="cart-container">
-        <ul className="cart-item-list">
-          {items.map((item, i) => (
-            <li key={i}>
-              <CartItem item={item} />
-            </li>
-          ))}
-        </ul>
-        <button className="clear-cart-btn" onClick={clearCart}></button>
+      <div className={`cart-container ${minimized ? "minimized" : ""}`}>
+        <button className="minimize-btn" onClick={toggleMinimized}>
+          {minimized ? "Show Cart" : "Minimize"}
+        </button>
+
+        {!minimized && (
+          <>
+            {isEmpty ? (
+              <div className="empty-message">Your cart is empty.</div>
+            ) : (
+              <>
+                <ul className="cart-item-list">
+                  {items.map((item, i) => (
+                    <li key={i}>
+                      <CartItem item={item} />
+                    </li>
+                  ))}
+                </ul>
+                <div className="cart-bottom-row">
+                  <button className="clear-cart-btn" onClick={clearCart}>
+                    Clear
+                  </button>
+                </div>
+              </>
+            )}
+          </>
+        )}
       </div>
     </>
   );
