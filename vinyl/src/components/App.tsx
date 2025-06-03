@@ -19,7 +19,7 @@ function App() {
       <BeautyBox />
       <Shelf addItem={addItem} shelves={shelves} />
       // can you fix the cart it pmo 💔
-      <Cart items={items} clearCart={clearCart} />
+      {/* <Cart items={items} clearCart={clearCart} /> */}
       <Footer />
     </>
   );
