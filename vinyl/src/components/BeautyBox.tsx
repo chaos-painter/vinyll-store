@@ -14,8 +14,9 @@ function BeautyBox() {
 
   return (
     <div className="beauty-box">
-      <h1 className="header" ref={textRef}>
-        SEWERVINYL
+      <h1 className="header">
+        SEWER <br />
+        VINYL
       </h1>
     </div>
   );
