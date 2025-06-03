@@ -1,0 +1,21 @@
+.footer {
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-of-columns {
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}

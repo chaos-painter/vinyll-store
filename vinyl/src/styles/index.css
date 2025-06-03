@@ -1,7 +1,11 @@
+:root {
+  font-family: 'Philosopher-Bold', sans-serif;
+}
+
 body {
   /* background-image: url("../../textures/dirty_paper.png"); */
   background-color: #f6f0ed;
-  margin: 0;
+  margin: 0; 
 }
 
 ul {

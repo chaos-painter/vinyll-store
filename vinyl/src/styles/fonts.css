@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Romvel';
-  src: url('/fonts/RomvelCyr.woff2') format('woff2'),
-       url('/fonts/RomvelCyr.woff') format('woff');
+  src: url('/fonts/RomvelCyr.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,9 +8,13 @@
 
 @font-face {
   font-family: 'Shlapak Script';
-  src: url('/fonts/Shlapak Script.woff2') format('woff2'),
-       url('/fonts/Shlapak Script.woff') format('woff');
+  src: url('/fonts/Shlapak Script.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'Philosopher-Bold';
+  src: url("/fonts/Philosopher-Bold.ttf") format('truetype');
 }
