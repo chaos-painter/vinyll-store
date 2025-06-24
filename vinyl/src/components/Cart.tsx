@@ -16,7 +16,9 @@ function Cart({ items, clearCart }: CartProps) {
     <>
       <div className={`cart-container ${minimized ? "minimized" : ""}`}>
         <button className="minimize-btn" onClick={toggleMinimized}>
-          {minimized ? "Show Cart" : "Minimize"}
+          <div className="img-div">
+            <img src="/SVG/bag.svg" alt="bag" />
+          </div>
         </button>
 
         {!minimized && (
@@ -25,13 +27,13 @@ function Cart({ items, clearCart }: CartProps) {
               <div className="empty-message">Your cart is empty.</div>
             ) : (
               <>
-                <ul className="cart-item-list">
+                <table className="cart-item-table">
                   {items.map((item, i) => (
-                    <li key={i}>
+                    <tr key={i} className="cart-item">
                       <CartItem item={item} />
-                    </li>
+                    </tr>
                   ))}
-                </ul>
+                </table>
                 <div className="cart-bottom-row">
                   <button className="clear-cart-btn" onClick={clearCart}>
                     Clear

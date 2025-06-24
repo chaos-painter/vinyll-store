@@ -5,9 +5,7 @@ function Header() {
     <header>
       <nav>
         <h1>Sewer</h1>
-        <div>
-          <img src="/SVG/Asset 3.svg" alt="logo" />
-        </div>
+        <div className="logo"></div>
         <h1>Vinyl</h1>
       </nav>
     </header>

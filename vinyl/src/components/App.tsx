@@ -3,6 +3,7 @@ import Shelf from "../components/Shelf.tsx";
 import AutoScrollHandler from "../components/AutoScrollHander.tsx";
 import BeautyBox from "../components/BeautyBox.tsx";
 import Cart from "../components/Cart.tsx";
+import ThemeSwitch from "../components/ThemeSwitch.tsx";
 import useCart from "../utils/useCart.ts";
 import getVinyls from "../utils/getVinyls.ts";
 
@@ -13,6 +14,7 @@ function App() {
   const { shelves } = getVinyls();
   return (
     <>
+      <ThemeSwitch />
       <Header />
       <AutoScrollHandler />
       <BeautyBox />

@@ -1,7 +1,32 @@
+:root {
+  --bg-color: #f6f0ed;
+  --color: #1d1d1b;
+  --logo: url(../../public/SVG/logoNoText.svg)
+}
+
+[data-theme="dark"] {
+  --bg-color: #1d1d1b;
+  --color: #f6f0ed;
+  --logo: url(../../public/SVG/logoNoTextDark.svg)
+}
+
 body {
   /* background-image: url("../../textures/dirty_paper.png"); */
-  background-color: #f6f0ed;
+  background-color: var(--bg-color);
+  color: var(--color);
   margin: 0;
+}
+
+body .cart-container .img-div {
+  background-color: var(--color);
+}
+
+body .logo {
+  background-image: var(--logo);
+}
+
+.switch-body, .switch-tip {
+  background-color: var(--color);
 }
 
 ul {

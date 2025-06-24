@@ -1,17 +1,17 @@
 .cart-item {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 10px;
   /* border: 1px dashed black; */
 }
 
 .cart-container {
   position: fixed;
-  width: 300px;
-  height: 300px;
+  right: 20px;
+  bottom: 20px;
+  width: 250px;
+  height: 200px;
   overflow-y: auto;
-  background-color: white;
-  border-radius: 20px;
+  background-color: transparent;
+  border-radius: 10px;
   border: 1px solid #aa1c1d;
   right: 30px;
   bottom: 30px;
@@ -20,44 +20,69 @@
   font-size: 12pt;
 }
 
-.cart-item-list {
-  padding: 0;
+.cart-item-table {
+  padding: 3px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td.first-column {
+  width: 80%;
+}
+
+td.second-column {
+  color:#aa1c1d;
 }
 
 .cart-bottom-row {
   position: sticky;
   bottom: 0;
-  background-color: white;
   width: 100%;
   height: 30px;
 }
 
 
 .cart-container.minimized {
-  height: auto;
-  width: auto;
   border: none;
   background-color: transparent;
 }
 
 .minimize-btn {
-  position: fixed;
-  right: 35px;
-  bottom: 35px;
+  position: absolute;
+  right: 4px;
+  bottom: 5px;
   z-index: 1000;
-  background-color: #aa1c1d;
-  color: white;
+  background-color: transparent;
+  color: #f6f0ed;
   border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
+  /* padding: 10px 20px;
+  border-radius: 30px; */
   cursor: pointer;
+  font-family: 'Romvel';
+  font-size: 1.4em;
 }
 
 .clear-cart-btn {
-  background-color: #aa1c1d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
+  background-color: transparent;
+  color: #aa1c1d;
+  border: 1px dashed #aa1c1d;
+  padding: 5px 10px;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+.cart-container .img-div {
+  height: 50px;
+  width: 50px;
+  background-color: #aa1c1d;
+  mask: url(../../public/SVG/bag.svg);
+}
+
+.cart-container img {
+  max-width: 50px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: auto;
+  display: none;
 }
